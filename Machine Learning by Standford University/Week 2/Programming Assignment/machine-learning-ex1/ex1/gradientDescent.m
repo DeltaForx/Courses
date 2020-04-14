@@ -22,15 +22,13 @@ for iter = 1:num_iters
       break;
     endif
     
-    x1 = X(:, 2)
+    x1 = X(:, 2);
     
-    temp1 = theta(1)-(alpha/m)*sum(X*theta-y)
-    temp2 = theta(2)-(alpha/m)*sum((X*theta-y).*x1)
+    temp1 = theta(1)-(alpha/m)*sum(X*theta-y);
+    temp2 = theta(2)-(alpha/m)*sum((X*theta-y).*x1);
     
-    theta(1) = temp1
-    theta(2) = temp2
-    
-    J_history(iter) = computeCost(X, y, theta)
+    theta(1) = temp1;
+    theta(2) = temp2;
 
     % ============================================================
 

@@ -29,17 +29,17 @@ sigma = zeros(1, size(X, 2));
 % Setting up mu
 % Parameter "a" -> arithmetic mean, "g" -> geometric mean, "h" -> harmonic mean
 
-row_count = size(X, 1)
-column_count = size(X, 2)
+row_count = size(X, 1);
+column_count = size(X, 2);
 
 for i = 1:column_count,
-  mu(i) = mean(X(:, i), "a")
+  mu(i) = mean(X(:, i), "a");
 endfor
 
 % Setting up sigma
 
 for i = 1:column_count,
-  sigma(i) = std(X(:, i))
+  sigma(i) = std(X(:, i));
 endfor
 
 % Normalize features
